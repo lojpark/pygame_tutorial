@@ -21,15 +21,7 @@ class Player:
 
     def crash(self, enemy):
         # 플레이어와 적이 충돌
-        for e in enemy.enemies:
-            up = e[1] - enemy.height / 2
-            down = e[1] + enemy.height / 2
-            left = e[0] - enemy.width / 2
-            right = e[0] + enemy.width / 2
-            if up <= self.y and self.y <= down:
-                if left <= self.x and self.x <= right:
-                    self.alive = False
-                    break
+        return
 
     def print(self, screen):
         # 플레이어 그리기
