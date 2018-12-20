@@ -17,7 +17,7 @@ class Key:
         if key == pygame.K_RIGHT:
             self.right = True
         if key == pygame.K_SPACE:
-            bullet.append(player.x, player.y)
+            player.loaded = 3
 
     def set_up(self, pygame, key):
         # 키보드 버튼을 눌렀을 때
